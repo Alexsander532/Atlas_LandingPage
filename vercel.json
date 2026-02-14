@@ -1,5 +1,4 @@
 {
-  "buildCommand": "npx astro build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install --prefer-offline --no-audit"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"
 }
