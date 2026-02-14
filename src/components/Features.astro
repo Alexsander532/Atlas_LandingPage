@@ -1,0 +1,289 @@
+---
+---
+
+<section id="resources" class="features-showcase">
+    <div class="container">
+        <h2 class="section-title fade-up">Recursos literários completos</h2>
+        <p class="section-subtitle fade-up delay-100">
+            Check-in de leitura, ranking gamificado, chat comunitário, 
+            metas personalizadas e muito mais para leitores de todos os níveis.
+        </p>
+
+        <div class="phones-display">
+            <!-- Left Phone -->
+            <div class="phone-card tilt-left fade-in delay-100">
+                <div class="phone-inner">
+                    <div class="screen-header">⏱️ Metrônomo de Leitura</div>
+                    <div class="screen-body">
+                        <div class="timer-display">
+                            <span class="timer-value">25</span>
+                            <span class="timer-unit">min</span>
+                        </div>
+                        <div class="timer-controls">
+                            <span class="ctrl">−</span>
+                            <span class="ctrl play">▶</span>
+                            <span class="ctrl">+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Center Phone -->
+            <div class="phone-card center-phone fade-in delay-300">
+                <div class="phone-inner">
+                    <div class="screen-header">📊 Ranking Semanal</div>
+                    <div class="screen-body">
+                        <div class="ranking-tabs">
+                            <span>Favoritos</span>
+                            <span class="active">Todos</span>
+                            <span>Amigos</span>
+                        </div>
+                        <div class="ranking-item"><span>🥇 Mariana</span> <span>12h</span></div>
+                        <div class="ranking-item"><span>🥈 Lucas</span> <span>10h</span></div>
+                        <div class="ranking-item"><span>🥉 Sofia</span> <span>8h</span></div>
+                        <div class="ranking-item you"><span>4️⃣ Você</span> <span>6h</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Phone -->
+            <div class="phone-card tilt-right fade-in delay-500">
+                <div class="phone-inner">
+                    <div class="screen-header">💬 Chat Literário</div>
+                    <div class="screen-body chat-body">
+                        <div class="msg received">Terminei "O Hobbit"! 🎉</div>
+                        <div class="msg sent">Incrível! Recomendo Silmarillion</div>
+                        <div class="msg received">Já está na minha lista! 📚</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .features-showcase {
+        padding: 8rem 0;
+        background: var(--bg-primary);
+        text-align: center;
+        overflow: hidden; /* Prevent horizontal scroll during anim */
+    }
+
+    .section-title {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.02em;
+    }
+
+    .section-subtitle {
+        color: var(--text-secondary);
+        font-size: 1.15rem;
+        line-height: 1.7;
+        max-width: 600px;
+        margin: 0 auto 4rem;
+    }
+
+    .phones-display {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        perspective: 1000px;
+        padding: 2rem 0; /* Space for shadows/tilts */
+    }
+
+    .phone-card {
+        width: 240px;
+        background: #1a1a1a;
+        border-radius: 32px;
+        border: 2px solid rgba(255, 255, 255, 0.08);
+        padding: 10px;
+        
+        /* Animation Base Props */
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Initial States (Hidden) */
+    .tilt-left {
+        transform: translateX(-100px) rotate(-8deg) translateY(20px);
+    }
+
+    .center-phone {
+        z-index: 2;
+        border-color: rgba(77, 159, 255, 0.3);
+        box-shadow: 0 0 40px rgba(77, 159, 255, 0.1);
+        transform: translateY(100px) scale(1.1);
+    }
+
+    .tilt-right {
+        transform: translateX(100px) rotate(8deg) translateY(20px);
+    }
+
+    /* Final States (Visible) - Triggered by JS adding .visible */
+    /* Specific selectors to win over global .visible rules */
+    .phone-card.visible {
+        opacity: 1;
+    }
+
+    .phone-card.visible.tilt-left {
+        transform: rotate(-8deg) translateY(20px);
+    }
+
+    .phone-card.visible.tilt-right {
+        transform: rotate(8deg) translateY(20px);
+    }
+
+    .phone-card.visible.center-phone {
+        transform: scale(1.1);
+    }
+
+    /* Hover effects (only when visible) */
+    .phone-card.visible:hover {
+        transform: scale(1.05) rotate(0deg) translateY(0);
+        z-index: 10;
+    }
+
+    .phone-inner {
+        background: #0d0d0d;
+        border-radius: 22px;
+        overflow: hidden;
+        min-height: 400px;
+    }
+
+    .screen-header {
+        padding: 1.5rem 1rem 0.75rem;
+        font-size: 0.85rem;
+        font-weight: 700;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .screen-body {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Timer Screen */
+    .timer-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0;
+    }
+
+    .timer-value {
+        font-size: 4rem;
+        font-weight: 800;
+        color: var(--accent-primary);
+    }
+
+    .timer-unit {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
+
+    .timer-controls {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ctrl {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,0.05);
+        color: var(--accent-primary);
+        font-size: 1.2rem;
+    }
+
+    .ctrl.play {
+        width: 48px;
+        height: 48px;
+        background: var(--accent-primary);
+        color: #000;
+    }
+
+    /* Ranking Screen */
+    .ranking-tabs {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.75rem;
+    }
+
+    .ranking-tabs span {
+        padding: 0.3rem 0.75rem;
+        border-radius: var(--radius-full);
+        color: var(--text-muted);
+        border: 1px solid transparent;
+    }
+
+    .ranking-tabs span.active {
+        background: var(--accent-primary);
+        color: #000;
+        font-weight: 600;
+    }
+
+    .ranking-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.04);
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+    }
+
+    .ranking-item.you {
+        color: var(--accent-primary);
+        font-weight: 600;
+    }
+
+    /* Chat Screen */
+    .chat-body {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .msg {
+        padding: 0.5rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.75rem;
+        max-width: 80%;
+    }
+
+    .msg.received {
+        background: rgba(255,255,255,0.06);
+        color: var(--text-secondary);
+        align-self: flex-start;
+    }
+
+    .msg.sent {
+        background: var(--accent-primary);
+        color: #000;
+        align-self: flex-end;
+    }
+
+    @media (max-width: 768px) {
+        .section-title {
+            font-size: 2rem;
+        }
+
+        .phones-display {
+            flex-direction: column;
+        }
+
+        .tilt-left, .tilt-right, .center-phone {
+            transform: none;
+        }
+
+        .phone-card {
+            width: 260px;
+        }
+    }
+</style>

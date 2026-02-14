@@ -1,0 +1,109 @@
+---
+---
+
+<footer>
+    <div class="footer-top">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="footer-logo">📚 Atlas</span>
+                <p class="footer-tagline">omnia legenda</p>
+            </div>
+
+            <div class="footer-made">
+                <p>Made with ❤️ by</p>
+                <a href="#" class="creator-link">Alexsander</a>
+            </div>
+
+            <div class="footer-links">
+                <a href="#">Política de Privacidade</a>
+                <a href="#">Termos de Uso</a>
+                <a href="mailto:contato@atlas.app">Suporte</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>Copyright ©2026 Todos os direitos reservados</p>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background: var(--bg-primary);
+        border-top: 1px solid var(--border-subtle);
+    }
+
+    .footer-top {
+        padding: 3rem 0;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .footer-logo {
+        font-size: 1.5rem;
+        font-weight: 800;
+    }
+
+    .footer-tagline {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        font-style: italic;
+        margin-top: 0.25rem;
+    }
+
+    .footer-made {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+    }
+
+    .creator-link {
+        color: var(--accent-primary);
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .footer-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .footer-links a {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+        color: var(--text-primary);
+    }
+
+    .footer-bottom {
+        border-top: 1px solid var(--border-subtle);
+        padding: 1.5rem 0;
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 0.8rem;
+    }
+
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-links {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+    }
+</style>

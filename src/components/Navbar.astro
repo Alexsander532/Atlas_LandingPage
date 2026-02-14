@@ -1,0 +1,92 @@
+---
+---
+
+<header id="navbar">
+    <a href="/" class="logo">
+        <span class="logo-icon">📚 Atlas</span>
+    </a>
+
+    <nav class="nav-pills">
+        <a href="#home" class="nav-link">Início</a>
+        <a href="#resources" class="nav-link">Recursos</a>
+        <a href="#testimonials" class="nav-link">Depoimentos</a>
+    </nav>
+
+    <div class="nav-right">
+        <span class="lang">🌐 BR</span>
+    </div>
+</header>
+
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        z-index: 100;
+        transition: background 0.3s;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+        z-index: 101;
+    }
+
+    .nav-pills {
+        display: flex;
+        gap: 0.25rem;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: var(--radius-full);
+        padding: 0.35rem;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1.25rem;
+        border-radius: var(--radius-full);
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.3s;
+    }
+
+    .nav-link:hover {
+        color: var(--text-primary);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .lang {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border: 1px solid var(--border-subtle);
+        border-radius: var(--radius-full);
+        transition: border-color 0.3s;
+    }
+
+    .lang:hover {
+        border-color: var(--border-hover);
+    }
+
+    @media (max-width: 768px) {
+        .nav-pills {
+            display: none;
+        }
+
+        .nav-right {
+            display: none;
+        }
+    }
+</style>
