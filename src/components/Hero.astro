@@ -1,358 +1,321 @@
 ---
 ---
 
-<section id="home" class="hero">
-    <!-- Background overlay -->
-    <div class="hero-bg">
-        <img 
-            src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1600&q=80" 
-            alt="Pessoas lendo livros"
-            class="hero-bg-img"
-        />
-        <div class="hero-overlay"></div>
-    </div>
+<section id="home" class="hero" aria-labelledby="hero-title">
+    <div class="hero-haze hero-haze--left"></div>
+    <div class="hero-haze hero-haze--right"></div>
 
-    <div class="container hero-content">
-        <div class="hero-text">
-            <p class="hero-eyebrow fade-up">Leitura, comunidade e inspiração</p>
-            
-            <h1 class="hero-title fade-up delay-100">
-                Atlas: Leitura<br/>
-                Conectada PRO+
+    <div class="hero-container">
+        <div class="hero-copy">
+            <p class="hero-eyebrow">LEITURA SEMPRE COM VOCÊ</p>
+            <h1 id="hero-title" class="hero-title">
+                <span>Atlas:</span>
+                <span>Leia mais,</span>
+                <span class="hero-title-accent">viva melhor.</span>
             </h1>
-            
-            <p class="hero-description fade-up delay-200">
-                Domine sua jornada literária com o app que une check-ins 
-                de leitura, rankings gamificados e comunidade ativa, 
-                tudo em uma interface leve e moderna.
+            <p class="hero-description">
+                Crie o hábito da leitura com check-ins,<br class="desktop-only" />
+                desafios e uma comunidade que te inspira.
             </p>
 
-            <div class="hero-actions fade-up delay-300">
-                <a href="#" class="store-btn">
-                    <div class="store-btn-icon">
-                        <svg width="20" height="24" viewBox="0 0 20 24" fill="currentColor">
-                            <path d="M16.52 12.26c-.04-3.6 2.94-5.32 3.08-5.42-1.68-2.46-4.28-2.8-5.22-2.84-2.22-.22-4.34 1.3-5.46 1.3-1.14 0-2.88-1.28-4.72-1.24-2.44.04-4.68 1.42-5.94 3.6-2.54 4.38-.64 10.88 1.82 14.44 1.2 1.74 2.64 3.7 4.54 3.62 1.82-.08 2.5-1.18 4.7-1.18 2.2 0 2.82 1.18 4.74 1.14 1.96-.04 3.2-1.78 4.38-3.52 1.38-2.02 1.96-3.98 1.98-4.08-.04-.02-3.82-1.46-3.86-5.82h-.04z"/>
-                        </svg>
-                    </div>
-                    <div class="store-btn-text">
-                        <span class="store-btn-label">Download iOS</span>
-                        <span class="store-btn-name">Apple Store</span>
-                    </div>
+            <div class="store-buttons" aria-label="Baixe o aplicativo">
+                <a class="store-button" href="#resources" aria-label="Baixar na App Store">
+                    <svg class="store-icon apple-icon" viewBox="0 0 24 29" aria-hidden="true">
+                        <path d="M19.9 15.5c0-3.4 2.8-5.1 2.9-5.2-1.6-2.3-4-2.6-4.9-2.7-2.1-.2-4.1 1.2-5.2 1.2-1.1 0-2.8-1.2-4.6-1.1-2.4 0-4.5 1.4-5.7 3.5-2.5 4.3-.6 10.7 1.8 14.2 1.2 1.7 2.6 3.6 4.5 3.5 1.8-.1 2.5-1.1 4.7-1.1s2.8 1.1 4.7 1.1c2 0 3.2-1.7 4.4-3.4 1.4-2 2-4 2.1-4.1-.1 0-4.7-1.8-4.7-5.9ZM16.5 5.4c.9-1.1 1.6-2.6 1.4-4.1-1.3.1-2.9.9-3.8 2-.8.9-1.5 2.5-1.3 3.9 1.5.1 2.9-.7 3.7-1.8Z" />
+                    </svg>
+                    <span><small>Baixar na</small><strong>App Store</strong></span>
                 </a>
-
-                <a href="#" class="store-btn">
-                    <div class="store-btn-icon">
-                        <svg width="20" height="22" viewBox="0 0 20 22" fill="currentColor">
-                            <path d="M1 1l8.5 9.5L1 21m0 0l14-7.5L1 1m0 20l14-7.5M1 1l14 7.5"/>
-                        </svg>
-                    </div>
-                    <div class="store-btn-text">
-                        <span class="store-btn-label">Download ANDROID</span>
-                        <span class="store-btn-name">Google Play</span>
-                    </div>
+                <a class="store-button" href="#resources" aria-label="Baixar no Google Play">
+                    <svg class="store-icon play-icon" viewBox="0 0 29 32" aria-hidden="true">
+                        <path fill="#23d66b" d="M1.4 1.3 16.2 16 1.5 30.8C.6 29.8.1 28.6.1 27.1V4.9c0-1.5.4-2.7 1.3-3.6Z" />
+                        <path fill="#ffd633" d="m20.5 11.7-4.3 4.3L1.4 1.3c.5-.5 1.1-.8 1.8-1.1l17.3 11.5Z" />
+                        <path fill="#ff5b5b" d="M27.2 13.6c1.9 1.1 1.9 3.7 0 4.8l-6.7 4-4.3-4.3 4.3-4.3 6.7 3.8Z" />
+                        <path fill="#31a7ff" d="m20.5 22.4-17.3 11c-.7-.2-1.3-.6-1.8-1.1L16.2 16l4.3 4.3v2.1Z" />
+                    </svg>
+                    <span><small>Baixar no</small><strong>Google Play</strong></span>
                 </a>
             </div>
-        </div>
 
-        <div class="hero-phone fade-up delay-300">
-            <div class="phone-frame">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                    <div class="app-bar">
-                        <span>📚 Atlas</span>
-                        <span>⚙️</span>
-                    </div>
-                    <div class="app-tabs">
-                        <span class="tab active">Check-in</span>
-                        <span class="tab">Ranking</span>
-                        <span class="tab">Chat</span>
-                    </div>
-                    <div class="app-content">
-                        <div class="checkin-circle">
-                            <span class="checkin-number">15</span>
-                            <span class="checkin-label">min</span>
-                        </div>
-                        <div class="checkin-status">Leitura registrada!</div>
-                        <div class="streak-bar">
-                            <span>🔥 Sequência: 7 dias</span>
-                        </div>
-                    </div>
-                    <div class="app-bottom-nav">
-                        <span>📖</span>
-                        <span>📊</span>
-                        <span>💬</span>
-                        <span>👤</span>
-                    </div>
+            <div class="hero-points" aria-label="Benefícios do Atlas">
+                <div class="hero-point">
+                    <span class="point-icon point-icon--blue">
+                        <svg viewBox="0 0 24 28" aria-hidden="true"><path d="m14.7 1-11 14.1h7.1L9.3 27 20.5 11h-7.2L14.7 1Z" /></svg>
+                    </span>
+                    <span>Crie o hábito</span>
+                </div>
+                <div class="hero-point">
+                    <span class="point-icon point-icon--green">
+                        <svg viewBox="0 0 32 24" aria-hidden="true"><circle cx="16" cy="7" r="5" /><circle cx="5.5" cy="9" r="4" /><circle cx="26.5" cy="9" r="4" /><path d="M7 22c0-5 3.5-8 9-8s9 3 9 8M0 22c.2-4.2 2-6.3 5.5-6.3 1.2 0 2.2.2 3 .7M32 22c-.2-4.2-2-6.3-5.5-6.3-1.2 0-2.2.2-3 .7" /></svg>
+                    </span>
+                    <span>Conecte-se</span>
+                </div>
+                <div class="hero-point">
+                    <span class="point-icon point-icon--purple">
+                        <svg viewBox="0 0 28 29" aria-hidden="true"><path d="M8 3h12v9c0 3.8-2.7 6.5-6 6.5S8 15.8 8 12V3Z" /><path d="M8 6H3v3c0 3.5 2 5.3 5.5 5.5M20 6h5v3c0 3.5-2 5.3-5.5 5.5M14 18.5V24M9 27h10" /></svg>
+                    </span>
+                    <span>Evolua</span>
                 </div>
             </div>
         </div>
+
+        <div class="hero-visual" aria-label="Prévia do aplicativo Atlas">
+            <div class="hero-note" aria-hidden="true">
+                <span>Pequenas</span>
+                <span>leituras,</span>
+                <span>grandes</span>
+                <span>histórias!</span>
+                <svg viewBox="0 0 150 34"><path d="M5 27c40-21 92-27 143-23" /></svg>
+            </div>
+
+            <img class="hero-table" src="/images/hero/MesamadeiraHero.png" alt="" aria-hidden="true" />
+
+            <div class="phone-stack">
+                <div class="phone phone--back">
+                <img src="/images/hero/tela-comunidade-hero.png" alt="Tela Comunidade do aplicativo Atlas" />
+                <div class="phone-shell">
+                    <div class="phone-screen phone-screen--community">
+                        <div class="status-bar"><span>9:41</span><span>▮▮▮ ◔ ▰</span></div>
+                        <div class="community-heading"><strong>Comunidade</strong><span>⌁</span></div>
+                        <div class="community-tabs"><span class="is-active">Todos</span><span>Amigos</span><span>Clubes</span></div>
+                        <div class="community-list">
+                            <div class="community-row"><span class="avatar avatar--mariana">M</span><span><b>Mariana</b><small>Leu por 42 minutos<br /><em>há 2h</em></small></span><strong>▣</strong></div>
+                            <div class="community-row"><span class="avatar avatar--lucas">L</span><span><b>Lucas</b><small>Terminou o capítulo 4<br /><em>de Duna · há 3h</em></small></span><strong>▤</strong></div>
+                            <div class="community-row"><span class="avatar avatar--sofia">S</span><span><b>Sofia</b><small>Iniciou uma sessão<br /><em>de 30 minutos · há 5h</em></small></span><strong>♨</strong></div>
+                            <div class="community-row"><span class="avatar avatar--pedro">P</span><span><b>Pedro</b><small>Concluiu<br /><em>Hábitos Atômicos · há 1d</em></small></span><strong>▣</strong></div>
+                        </div>
+                        <div class="phone-nav"><span>⌂<small>Início</small></span><span>⌕<small>Explorar</small></span><span class="active">♟<small>Comunidade</small></span><span>♙<small>Perfil</small></span></div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="phone phone--front">
+                <img src="/images/hero/tela-inicial-hero.png" alt="Tela inicial do aplicativo Atlas" />
+                <div class="phone-shell">
+                    <div class="phone-screen phone-screen--home">
+                        <div class="status-bar"><span>9:41</span><span>▮▮▮ ◔ ▰</span></div>
+                        <div class="home-heading"><span class="profile-avatar">●</span><span><small>Olá, Alex</small><b>Bora ler hoje?</b></span><strong>⚙</strong></div>
+                        <div class="streak-card"><span class="fire">♨</span><span><small>Sequência atual</small><b>7 dias</b></span><strong>›</strong></div>
+                        <div class="timer-ring"><span><b>25</b><small>minutos</small></span></div>
+                        <button class="start-reading"><span>▶</span> Iniciar leitura</button>
+                        <div class="daily-card"><span><small>Meta diária</small><b>25 / 30 min</b></span><strong>83%</strong><i><em></em></i></div>
+                        <div class="book-card"><span class="book-cover">DUNE</span><span><small>Livro atual</small><b>Duna</b><em>Frank Herbert</em></span><strong>38%<i><em></em></i></strong></div>
+                        <div class="phone-nav"><span class="active">⌂<small>Início</small></span><span>⌕<small>Explorar</small></span><span>♟<small>Comunidade</small></span><span>♙<small>Perfil</small></span></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="bear-scene" aria-hidden="true">
+                <img src="/images/hero/imagemHeroUrso.png" alt="" />
+            </div>
+
+            <img class="hero-plant" src="/images/hero/PlantaDesfocadaHero.png" alt="" aria-hidden="true" />
+        </div>
     </div>
+
+    <a class="hero-scroll" href="#resources" aria-label="Conheça mais">
+        <span class="scroll-chevron">⌄</span>
+        <span>Conheça mais</span>
+    </a>
 </section>
 
 <style>
     .hero {
         position: relative;
         min-height: 100vh;
-        display: flex;
-        align-items: center;
         overflow: hidden;
+        color: #f7f8fb;
+        background:
+            radial-gradient(circle at 68% 74%, rgba(27, 61, 88, .22), transparent 25rem),
+            radial-gradient(circle at 26% 31%, rgba(19, 51, 81, .2), transparent 15rem),
+            linear-gradient(115deg, #091017 0%, #080d12 48%, #05080b 100%);
     }
 
-    .hero-bg {
+    .hero::after {
+        content: '';
         position: absolute;
         inset: 0;
-        z-index: 0;
+        pointer-events: none;
+        background: linear-gradient(90deg, rgba(4, 8, 11, .05), transparent 55%, rgba(0, 0, 0, .24));
     }
 
-    .hero-bg-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .hero-overlay {
+    .hero-haze {
         position: absolute;
-        inset: 0;
-        background: linear-gradient(
-            to right,
-            rgba(10, 10, 10, 0.85) 0%,
-            rgba(10, 10, 10, 0.7) 50%,
-            rgba(10, 10, 10, 0.4) 100%
-        );
+        border-radius: 50%;
+        filter: blur(2px);
+        pointer-events: none;
     }
 
-    .hero-content {
+    .hero-haze--left { width: 150px; height: 150px; left: 28%; top: 20%; background: rgba(20, 66, 107, .12); box-shadow: 0 0 55px 20px rgba(16, 75, 126, .1); }
+    .hero-haze--right { width: 220px; height: 220px; right: -30px; bottom: -60px; background: rgba(54, 102, 20, .1); box-shadow: 0 0 60px 20px rgba(40, 95, 20, .12); }
+
+    .hero-container {
         position: relative;
         z-index: 1;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: minmax(410px, .82fr) minmax(680px, 1.38fr);
         align-items: center;
-        gap: 4rem;
-        padding-top: 6rem;
-        padding-bottom: 4rem;
-    }
-
-    .hero-eyebrow {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
-        letter-spacing: 0.5px;
-    }
-
-    .hero-title {
-        font-size: 4rem;
-        font-weight: 800;
-        line-height: 1.05;
-        margin-bottom: 1.5rem;
-        letter-spacing: -0.02em;
-    }
-
-    .hero-description {
-        color: var(--text-secondary);
-        font-size: 1.1rem;
-        line-height: 1.7;
-        max-width: 500px;
-        margin-bottom: 2.5rem;
-    }
-
-    .hero-actions {
-        display: flex;
         gap: 1rem;
-        flex-wrap: wrap;
+        width: min(1380px, calc(100% - 10rem));
+        min-height: 100vh;
+        margin: 0 auto;
+        padding-top: 7.4rem;
+        padding-bottom: 3rem;
     }
 
-    .store-btn {
-        display: flex;
-        align-items: center;
-        gap: 0.75rem;
-        background: var(--bg-card);
-        border: 1px solid var(--border-subtle);
-        padding: 0.75rem 1.5rem;
-        border-radius: var(--radius-lg);
-        transition: all 0.3s;
-        cursor: pointer;
-    }
+    .hero-copy { position: relative; z-index: 5; align-self: center; padding-top: 1.7rem; }
+    .hero-eyebrow { margin-bottom: 1.45rem; color: #aebaca; font-size: .9rem; font-weight: 500; letter-spacing: .27em; }
+    .hero-title { margin: 0; font-size: clamp(4rem, 5.65vw, 5.65rem); font-weight: 800; line-height: .97; letter-spacing: -.065em; }
+    .hero-title span { display: block; }
+    .hero-title-accent { color: #1495fa; text-shadow: 0 0 32px rgba(17, 132, 238, .16); }
+    .hero-description { margin: 1.55rem 0 2.55rem; color: #b7c9dd; font-size: 1.28rem; line-height: 1.45; letter-spacing: -.02em; }
 
-    .store-btn:hover {
-        background: var(--bg-card-hover);
-        border-color: var(--border-hover);
-        transform: translateY(-2px);
-    }
+    .store-buttons { display: flex; gap: 1.25rem; }
+    .store-button { display: flex; align-items: center; gap: .95rem; width: 214px; min-height: 76px; padding: .8rem 1.25rem; border: 1px solid rgba(164, 190, 215, .22); border-radius: 16px; background: linear-gradient(145deg, rgba(25, 34, 42, .68), rgba(8, 13, 18, .8)); box-shadow: inset 0 1px rgba(255,255,255,.07), 0 9px 20px rgba(0,0,0,.16); transition: transform .25s ease, border-color .25s ease, background .25s ease; }
+    .store-button:hover { transform: translateY(-3px); border-color: rgba(61, 156, 255, .75); background: rgba(22, 38, 53, .88); }
+    .store-icon { width: 30px; max-height: 34px; flex: 0 0 auto; fill: #fff; }
+    .store-button span { display: flex; flex-direction: column; line-height: 1.04; }
+    .store-button small { color: #f3f5f8; font-size: .72rem; font-weight: 400; }
+    .store-button strong { margin-top: .24rem; color: #fff; font-size: 1.18rem; font-weight: 600; letter-spacing: -.03em; }
 
-    .store-btn-icon {
-        color: var(--text-primary);
-    }
+    .hero-points { display: flex; gap: 3.9rem; margin-top: 4.55rem; }
+    .hero-point { display: flex; flex-direction: column; align-items: center; gap: .75rem; color: #f8fafc; font-size: .98rem; white-space: nowrap; }
+    .point-icon { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; }
+    .point-icon svg { width: 27px; height: 27px; fill: none; stroke: currentColor; stroke-width: 2.2; }
+    .point-icon--blue { color: #1598ff; background: #062345; }
+    .point-icon--blue svg { fill: currentColor; stroke: none; }
+    .point-icon--green { color: #38d761; background: #052d19; }
+    .point-icon--green svg { fill: none; }
+    .point-icon--purple { color: #c781ff; background: #200939; }
 
-    .store-btn-label {
-        display: block;
-        font-size: 0.7rem;
-        color: var(--text-muted);
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-    }
+    /* One proportional scene keeps every object resting on the same tabletop. */
+    .hero-visual { position: relative; isolation: isolate; container-type: inline-size; width: 100%; min-height: 0; aspect-ratio: 900 / 870; align-self: center; }
+    .hero-visual::before { display: none; }
+    .hero-visual::after { content: ''; position: absolute; z-index: 0; right: 7%; bottom: 7%; width: 77%; height: 14%; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,.82), rgba(0,0,0,0) 70%); filter: blur(10px); }
+    .hero-table { position: absolute; z-index: 0; left: -27%; top: 42%; width: 150%; max-width: none; height: auto; pointer-events: none; }
+    .hero-note { position: absolute; z-index: 4; top: 9%; right: -2%; display: flex; flex-direction: column; color: #a5b5cb; font-family: 'Comic Sans MS', 'Bradley Hand', cursive; font-size: 3.2cqw; font-weight: 600; line-height: 1.05; letter-spacing: .02em; transform: rotate(-12deg); text-shadow: 0 2px 9px rgba(0,0,0,.35); }
+    .hero-note span:nth-child(2) { margin-left: 1cqw; }
+    .hero-note span:nth-child(3) { margin-left: 2.2cqw; }
+    .hero-note span:nth-child(4) { margin-left: 2.9cqw; }
+    .hero-note svg { width: 17cqw; margin: 1cqw 0 0 3cqw; overflow: visible; }
+    .hero-note path { fill: none; stroke: #168dff; stroke-width: 4; }
 
-    .store-btn-name {
-        display: block;
-        font-size: 1rem;
-        font-weight: 700;
-        color: var(--text-primary);
-    }
+    .phone-stack { position: absolute; z-index: 2; inset: 0; transform: translateX(3%); }
+    .phone-stack::after { content: ''; position: absolute; z-index: 0; left: 25%; bottom: 7%; width: 58%; height: 8%; border-radius: 50%; background: rgba(0,0,0,.72); filter: blur(16px); pointer-events: none; }
+    .phone { position: absolute; transform-origin: center bottom; filter: drop-shadow(0 30px 30px rgba(0,0,0,.55)); }
+    .phone > img { display: block; width: 100%; height: 100%; object-fit: fill; }
+    .phone--back { z-index: 1; bottom: 13%; left: 7%; width: 38%; aspect-ratio: 1 / 2; transform: rotate(-5deg); }
+    .phone--front { z-index: 2; bottom: 8%; left: 35%; width: 38%; aspect-ratio: 1 / 2; transform: rotate(2deg); }
+    .phone-shell { display: none; width: 100%; height: 100%; padding: 12px; border: 2px solid #72869b; border-radius: 48px; background: linear-gradient(132deg, #16202b, #05080c 32%, #0b1117 80%, #263b4c); box-shadow: inset 0 0 0 1px rgba(255,255,255,.18), 0 0 15px rgba(76, 161, 244, .22); }
+    .phone-screen { position: relative; display: flex; flex-direction: column; height: 100%; overflow: hidden; border: 1px solid rgba(255,255,255,.08); border-radius: 37px; background: #071019; color: #f3f7fc; box-shadow: inset 0 0 55px rgba(25, 83, 125, .1); }
+    .phone-screen::before { content: ''; position: absolute; z-index: 6; top: 0; left: 50%; width: 125px; height: 27px; border-radius: 0 0 17px 17px; background: #010204; transform: translateX(-50%); }
+    .status-bar { display: flex; justify-content: space-between; padding: 1.2rem 1.15rem .3rem; font-size: .7rem; font-weight: 700; }
+    .phone--front .status-bar { padding-top: 1.35rem; }
 
-    /* Phone mockup */
-    .hero-phone {
-        display: flex;
-        justify-content: center;
-    }
+    .community-heading { display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.2rem .85rem; font-size: 1.1rem; }
+    .community-heading span { color: #94aac1; font-size: 1.5rem; }
+    .community-tabs { display: flex; gap: .25rem; margin: 0 .75rem .7rem; padding: .3rem; border-radius: 99px; background: rgba(109, 139, 163, .14); }
+    .community-tabs span { flex: 1; padding: .55rem .25rem; border-radius: 99px; color: #8ea4ba; font-size: .68rem; text-align: center; }
+    .community-tabs .is-active { color: #05111b; background: #1599ff; font-weight: 700; }
+    .community-list { padding: .2rem .8rem 0; }
+    .community-row { display: grid; grid-template-columns: 36px 1fr 20px; gap: .65rem; align-items: center; min-height: 104px; border-bottom: 1px solid rgba(160, 188, 215, .1); }
+    .community-row > span:nth-child(2) { min-width: 0; }
+    .community-row b, .community-row small { display: block; }
+    .community-row b { margin-bottom: .28rem; font-size: .77rem; }
+    .community-row small { color: #bdc9d5; font-size: .68rem; line-height: 1.3; }
+    .community-row em { color: #738ba1; font-style: normal; font-size: .62rem; }
+    .community-row > strong { color: #1a9aff; font-size: 1.1rem; }
+    .avatar { display: grid; place-items: center; width: 34px; height: 34px; overflow: hidden; border: 2px solid #e9f1f9; border-radius: 50%; color: #152231; font-size: .75rem; font-weight: 800; }
+    .avatar--mariana { background: linear-gradient(140deg, #f3c1a3, #735349); }
+    .avatar--lucas { background: linear-gradient(140deg, #94b5d2, #344e63); }
+    .avatar--sofia { background: linear-gradient(140deg, #f0d0af, #7d573b); }
+    .avatar--pedro { background: linear-gradient(140deg, #a2c8e6, #36536c); }
 
-    .phone-frame {
-        width: 280px;
-        background: #1a1a1a;
-        border-radius: 40px;
-        border: 3px solid #333;
-        padding: 12px;
-        box-shadow: 
-            0 0 60px rgba(77, 159, 255, 0.15),
-            0 25px 50px rgba(0, 0, 0, 0.5);
-        position: relative;
-    }
+    .home-heading { display: grid; grid-template-columns: 45px 1fr 30px; gap: .65rem; align-items: center; padding: 1.15rem 1.25rem 1rem; }
+    .profile-avatar { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: #6d432a; background: radial-gradient(circle at 50% 38%, #f4b978 0 22%, #754629 23% 29%, #a9693c 30% 100%); box-shadow: inset 0 0 0 2px #d5a16a; font-size: 0; }
+    .home-heading small, .home-heading b { display: block; }
+    .home-heading small { margin-bottom: .2rem; color: #f4f6f9; font-size: 1.08rem; font-weight: 600; }
+    .home-heading b { color: #9dafc3; font-size: .75rem; font-weight: 400; }
+    .home-heading > strong { color: #bdd1e5; font-size: 1.35rem; }
+    .streak-card { display: grid; grid-template-columns: 48px 1fr 25px; gap: .65rem; align-items: center; margin: .4rem .9rem 1rem; padding: .85rem .85rem; border-radius: 15px; background: linear-gradient(135deg, #16232e, #121c26); box-shadow: inset 0 1px rgba(255,255,255,.04); }
+    .fire { display: grid; place-items: center; width: 38px; height: 38px; color: #ff7043; font-size: 2rem; }
+    .streak-card small, .streak-card b { display: block; }
+    .streak-card small { color: #b9c8d7; font-size: .7rem; }
+    .streak-card b { margin-top: .25rem; font-size: 1rem; }
+    .streak-card > strong { color: #b7c9d9; font-size: 2rem; font-weight: 300; }
+    .timer-ring { display: grid; place-items: center; width: 164px; height: 164px; margin: .35rem auto 1rem; border-radius: 50%; background: conic-gradient(#1598ff 0 83%, rgba(120, 156, 185, .16) 83% 100%); transform: rotate(-45deg); }
+    .timer-ring::before { content: ''; position: absolute; width: 148px; height: 148px; border-radius: 50%; background: #071019; }
+    .timer-ring span { position: relative; display: flex; flex-direction: column; align-items: center; transform: rotate(45deg); }
+    .timer-ring b { font-size: 2.65rem; line-height: 1; }
+    .timer-ring small { margin-top: .35rem; color: #c5d2df; font-size: .75rem; }
+    .start-reading { display: flex; align-items: center; justify-content: center; gap: .5rem; width: calc(100% - 4.5rem); margin: 0 auto 1rem; padding: .78rem; border: 0; border-radius: 99px; color: #03101a; background: #1799ff; font: inherit; font-size: .78rem; font-weight: 700; box-shadow: 0 6px 18px rgba(17, 139, 242, .3); }
+    .start-reading span { font-size: .6rem; }
+    .daily-card, .book-card { margin: 0 .8rem .65rem; padding: .8rem .85rem; border-radius: 13px; background: linear-gradient(135deg, #121e29, #101923); }
+    .daily-card { display: grid; grid-template-columns: 1fr auto; gap: .4rem; }
+    .daily-card small, .daily-card b { display: block; }
+    .daily-card small { color: #c3cfdb; font-size: .66rem; }
+    .daily-card b { margin-top: .2rem; font-size: .78rem; font-weight: 500; }
+    .daily-card > strong { align-self: center; color: #1598ff; font-size: .7rem; }
+    .daily-card i, .book-card i { grid-column: 1 / -1; display: block; height: 7px; margin-top: .35rem; border-radius: 99px; background: #283b4d; }
+    .daily-card i em { display: block; width: 83%; height: 100%; border-radius: inherit; background: #1598ff; }
+    .book-card { display: grid; grid-template-columns: 42px 1fr 38px; align-items: center; gap: .65rem; }
+    .book-cover { display: grid; place-items: center; width: 42px; height: 55px; border-radius: 3px; color: #f6d7a4; background: linear-gradient(145deg, #8a3a2b, #c3663c); font-family: Georgia, serif; font-size: .58rem; }
+    .book-card small, .book-card b, .book-card em { display: block; }
+    .book-card small { color: #c3cfdb; font-size: .62rem; }
+    .book-card b { margin: .18rem 0; font-size: .82rem; }
+    .book-card em { color: #93a6b8; font-size: .6rem; font-style: normal; }
+    .book-card > strong { align-self: end; color: #aebfd0; font-size: .64rem; font-weight: 400; }
+    .book-card i { width: 100%; height: 5px; margin-top: .3rem; }
+    .book-card i em { width: 38%; height: 100%; border-radius: inherit; background: #1598ff; }
 
-    .phone-notch {
-        width: 120px;
-        height: 28px;
-        background: #1a1a1a;
-        border-radius: 0 0 16px 16px;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-    }
+    .phone-nav { display: flex; justify-content: space-around; margin-top: auto; padding: .72rem .45rem .75rem; border-top: 1px solid rgba(155, 185, 210, .1); color: #7e97ae; }
+    .phone-nav span { display: flex; flex-direction: column; align-items: center; gap: .2rem; font-size: 1.1rem; line-height: 1; }
+    .phone-nav small { font-size: .48rem; }
+    .phone-nav .active { color: #1598ff; }
 
-    .phone-screen {
-        background: #0d0d0d;
-        border-radius: 28px;
-        overflow: hidden;
-        min-height: 520px;
-        display: flex;
-        flex-direction: column;
-    }
+    .bear-scene { position: absolute; z-index: 3; left: 69%; bottom: 23.9%; width: 44%; isolation: isolate; filter: drop-shadow(0 22px 16px rgba(0,0,0,.45)); }
+    .bear-scene::after { content: ''; position: absolute; z-index: -1; left: 8%; bottom: 0; width: 84%; height: 13%; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,.92) 0%, rgba(0,0,0,.62) 48%, transparent 76%); filter: blur(10px); }
+    .bear-scene img { display: block; width: 100%; height: auto; }
+    .hero-plant { position: absolute; z-index: 4; right: -14%; bottom: -24%; width: 52%; max-width: none; height: auto; opacity: .82; pointer-events: none; }
+    .hero-scroll { position: absolute; z-index: 5; bottom: 3.8rem; left: 18.2%; display: flex; flex-direction: column; align-items: center; gap: .55rem; color: #b7bec7; font-size: .95rem; }
+    .scroll-chevron { color: #d8e0e9; font-size: 2rem; line-height: .5; }
 
-    .app-bar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2.5rem 1rem 0.75rem;
-        font-size: 0.9rem;
-        font-weight: 700;
-    }
-
-    .app-tabs {
-        display: flex;
-        gap: 0.25rem;
-        padding: 0.5rem;
-        margin: 0 0.5rem;
-        background: rgba(255,255,255,0.05);
-        border-radius: var(--radius-full);
-    }
-
-    .tab {
-        flex: 1;
-        text-align: center;
-        padding: 0.4rem 0.5rem;
-        border-radius: var(--radius-full);
-        font-size: 0.75rem;
-        font-weight: 600;
-        color: var(--text-muted);
-        transition: all 0.3s;
-    }
-
-    .tab.active {
-        background: var(--accent-primary);
-        color: #000;
-    }
-
-    .app-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem 1rem;
-        gap: 1.5rem;
-    }
-
-    .checkin-circle {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        border: 3px solid var(--accent-primary);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 0 30px var(--accent-glow);
-    }
-
-    .checkin-number {
-        font-size: 2.5rem;
-        font-weight: 800;
-        color: var(--accent-primary);
-    }
-
-    .checkin-label {
-        font-size: 0.8rem;
-        color: var(--text-muted);
-    }
-
-    .checkin-status {
-        color: var(--pill-green);
-        font-weight: 600;
-        font-size: 0.85rem;
-    }
-
-    .streak-bar {
-        background: rgba(255,255,255,0.05);
-        padding: 0.5rem 1.2rem;
-        border-radius: var(--radius-full);
-        font-size: 0.8rem;
-        color: var(--text-secondary);
-    }
-
-    .app-bottom-nav {
-        display: flex;
-        justify-content: space-around;
-        padding: 0.75rem;
-        border-top: 1px solid rgba(255,255,255,0.05);
-        font-size: 1.2rem;
+    @media (max-width: 1180px) {
+        .hero-container { width: min(1100px, calc(100% - 4rem)); grid-template-columns: minmax(350px, .75fr) minmax(570px, 1.2fr); }
+        .hero-note { right: -6%; transform: scale(.85) rotate(-9deg); transform-origin: right top; }
+        .hero-points { gap: 2rem; }
     }
 
     @media (max-width: 900px) {
-        .hero-content {
-            grid-template-columns: 1fr;
-            text-align: center;
-            padding-top: 8rem;
-        }
+        .hero { min-height: auto; }
+        .hero-container { display: block; width: min(680px, calc(100% - 3rem)); min-height: auto; padding-top: 9rem; padding-bottom: 4rem; }
+        .hero-copy { padding-top: 0; text-align: center; }
+        .hero-title { font-size: clamp(3.6rem, 12vw, 5rem); }
+        .hero-description { font-size: 1.05rem; }
+        .store-buttons, .hero-points { justify-content: center; }
+        .hero-points { margin-top: 3rem; }
+        .hero-visual { width: 100%; margin-top: 3rem; margin-bottom: 4rem; }
+        .hero-note { right: -4%; font-size: 3.2cqw; transform: rotate(-12deg); }
+        .hero-note span:nth-child(2) { margin-left: 1cqw; }
+        .hero-note span:nth-child(3) { margin-left: 2.2cqw; }
+        .hero-note span:nth-child(4) { margin-left: 2.9cqw; }
+        .hero-note svg { width: 17cqw; margin: 1cqw 0 0 3cqw; }
+        .hero-scroll { display: none; }
+    }
 
-        .hero-title {
-            font-size: 2.8rem;
-        }
-
-        .hero-description {
-            margin: 0 auto 2rem;
-        }
-
-        .hero-actions {
-            justify-content: center;
-        }
-
-        .hero-overlay {
-            background: rgba(10, 10, 10, 0.75);
-        }
-
-        .hero-phone {
-            display: none;
-        }
+    @media (max-width: 560px) {
+        .hero-container { width: calc(100% - 2rem); padding-top: 7.5rem; }
+        .hero-eyebrow { font-size: .7rem; letter-spacing: .18em; }
+        .hero-title { font-size: 3.15rem; }
+        .desktop-only { display: none; }
+        .store-buttons { gap: .55rem; }
+        .store-button { width: 48%; min-height: 64px; padding: .65rem .7rem; gap: .5rem; }
+        .store-button strong { font-size: .85rem; }
+        .store-button small { font-size: .57rem; }
+        .store-icon { width: 23px; }
+        .hero-points { gap: .9rem; }
+        .hero-point { font-size: .75rem; }
+        .point-icon { width: 45px; height: 45px; }
+        .hero-visual { margin-top: 2.5rem; }
     }
 </style>
