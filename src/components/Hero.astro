@@ -1,4 +1,5 @@
 ---
+import playStoreSymbol from '../../imagens_mockup/hero/b3de311d-1860-4b59-ac69-e9f5db8fb86d.png';
 ---
 
 <section id="home" class="hero" aria-labelledby="hero-title">
@@ -26,12 +27,7 @@
                     <span><small>Baixar na</small><strong>App Store</strong></span>
                 </a>
                 <a class="store-button" href="#resources" aria-label="Baixar no Google Play">
-                    <svg class="store-icon play-icon" viewBox="0 0 32 32" aria-hidden="true">
-                        <path fill="#22d66b" d="M3.05 1.55C2.35 2.2 2 3.2 2 4.45v23.1c0 1.25.35 2.25 1.05 2.9L17.15 16 3.05 1.55Z" />
-                        <path fill="#ffda2d" d="m20.7 12.35-4.05 3.65L3.05 1.55c.48-.43 1.08-.66 1.8-.7.4-.02.82.1 1.25.35l14.6 11.15Z" />
-                        <path fill="#ff5b5b" d="M28.15 13.9 20.7 12.35 16.65 16l4.05 3.65 7.45-1.55c2.46-.52 2.46-3.68 0-4.2Z" />
-                        <path fill="#31a7ff" d="m3.05 30.45 13.6-14.45 4.05 3.65L6.1 31.15c-.43.25-.85.37-1.25.35-.72-.04-1.32-.27-1.8-.7l0-.35Z" />
-                    </svg>
+                    <img class="store-icon play-icon" src={playStoreSymbol.src} alt="" aria-hidden="true" />
                     <span><small>Baixar no</small><strong>Google Play</strong></span>
                 </a>
             </div>
@@ -59,14 +55,6 @@
         </div>
 
         <div class="hero-visual" aria-label="Prévia do aplicativo Atlas">
-            <div class="hero-note" aria-hidden="true">
-                <span>Pequenas</span>
-                <span>leituras,</span>
-                <span>grandes</span>
-                <span>histórias!</span>
-                <svg viewBox="0 0 150 34"><path d="M5 27c40-21 92-27 143-23" /></svg>
-            </div>
-
             <img class="hero-table" src="/images/hero/MesamadeiraHero.png" alt="" aria-hidden="true" />
 
             <div class="phone-stack">
@@ -199,12 +187,6 @@
     .hero-visual::before { display: none; }
     .hero-visual::after { content: ''; position: absolute; z-index: 0; right: 7%; bottom: 7%; width: 77%; height: 14%; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,0,0,.82), rgba(0,0,0,0) 70%); filter: blur(10px); }
     .hero-table { position: absolute; z-index: 0; left: -27%; top: 42%; width: 150%; max-width: none; height: auto; pointer-events: none; animation: hero-table-in 1.1s cubic-bezier(.22, 1, .36, 1) .15s both; }
-    .hero-note { position: absolute; z-index: 4; top: 9%; right: -2%; display: flex; flex-direction: column; color: #a5b5cb; font-family: 'Comic Sans MS', 'Bradley Hand', cursive; font-size: 3.2cqw; font-weight: 600; line-height: 1.05; letter-spacing: .02em; transform: rotate(-12deg); text-shadow: 0 2px 9px rgba(0,0,0,.35); animation: hero-note-in .8s cubic-bezier(.22, 1, .36, 1) .4s both; }
-    .hero-note span:nth-child(2) { margin-left: 1cqw; }
-    .hero-note span:nth-child(3) { margin-left: 2.2cqw; }
-    .hero-note span:nth-child(4) { margin-left: 2.9cqw; }
-    .hero-note svg { width: 17cqw; margin: 1cqw 0 0 3cqw; overflow: visible; }
-    .hero-note path { fill: none; stroke: #168dff; stroke-width: 4; }
 
     .phone-stack { position: absolute; z-index: 2; inset: 0; transform: translateX(3%); }
     .phone-stack::after { content: ''; position: absolute; z-index: 0; left: 25%; bottom: 7%; width: 58%; height: 8%; border-radius: 50%; background: rgba(0,0,0,.72); filter: blur(16px); pointer-events: none; }
@@ -289,11 +271,6 @@
         to { opacity: 1; transform: translateY(0) scale(1); }
     }
 
-    @keyframes hero-note-in {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
     @keyframes phone-back-in {
         from { opacity: 0; transform: translate3d(-28px, 52px, 0) rotate(-5deg) scale(.94); }
         to { opacity: 1; transform: translate3d(0, 0, 0) rotate(-5deg) scale(1); }
@@ -341,7 +318,6 @@
 
     @media (prefers-reduced-motion: reduce) {
         .hero-table,
-        .hero-note,
         .phone--back,
         .phone--front,
         .bear-scene,
@@ -360,7 +336,6 @@
 
     @media (max-width: 1180px) {
         .hero-container { width: min(1100px, calc(100% - 4rem)); grid-template-columns: minmax(350px, .75fr) minmax(570px, 1.2fr); }
-        .hero-note { right: -6%; transform: scale(.85) rotate(-9deg); transform-origin: right top; }
         .hero-points { gap: 2rem; }
     }
 
@@ -373,11 +348,6 @@
         .store-buttons, .hero-points { justify-content: center; }
         .hero-points { margin-top: 3rem; }
         .hero-visual { width: 100%; margin-top: 3rem; margin-bottom: 4rem; }
-        .hero-note { right: -4%; font-size: 3.2cqw; transform: rotate(-12deg); }
-        .hero-note span:nth-child(2) { margin-left: 1cqw; }
-        .hero-note span:nth-child(3) { margin-left: 2.2cqw; }
-        .hero-note span:nth-child(4) { margin-left: 2.9cqw; }
-        .hero-note svg { width: 17cqw; margin: 1cqw 0 0 3cqw; }
     }
 
     @media (max-width: 560px) {

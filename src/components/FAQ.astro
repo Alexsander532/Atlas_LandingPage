@@ -1,0 +1,127 @@
+<section id="faq" class="faq-section" aria-labelledby="faq-title">
+    <div class="faq-container">
+        <div class="faq-heading fade-up">
+            <span class="faq-eyebrow"><i aria-hidden="true"></i> DÚVIDAS FREQUENTES</span>
+            <h2 id="faq-title">Tudo o que você precisa <span>saber.</span></h2>
+            <p>Respostas rápidas para você começar sua jornada literária com o Atlas.</p>
+        </div>
+
+        <div class="faq-layout">
+            <aside class="faq-aside fade-up delay-100">
+                <div class="faq-aside-icon" aria-hidden="true">
+                    <svg viewBox="0 0 48 48"><path d="M9 10.5c0-2.2 1.8-4 4-4h26v31H13c-2.2 0-4 1.8-4 4v-31Z" /><path d="M9 37.5c0-2.2 1.8-4 4-4h26M16 15h16M16 21h11" /></svg>
+                </div>
+                <span class="faq-aside-kicker">ATLAS ESTÁ AQUI</span>
+                <h3>Leitura mais leve começa com respostas claras.</h3>
+                <p>Não encontrou o que procurava? Nossa equipe está pronta para ajudar.</p>
+                <a href="mailto:suporte@atlas.app" class="faq-contact">Fale com a gente <span aria-hidden="true">→</span></a>
+            </aside>
+
+            <div class="faq-list" aria-label="Perguntas frequentes">
+                <details class="faq-item fade-up delay-100" open>
+                    <summary>O que é o Atlas?</summary>
+                    <div class="faq-answer"><p>O Atlas é um aplicativo que transforma a leitura em um hábito mais simples, consistente e divertido. Você acompanha seu progresso, participa de desafios e se conecta com uma comunidade de leitores.</p></div>
+                </details>
+                <details class="faq-item fade-up delay-200">
+                    <summary>Como funciona o check-in de leitura?</summary>
+                    <div class="faq-answer"><p>É só abrir o app, iniciar uma sessão e registrar o tempo ou as páginas lidas. Em poucos segundos, seu progresso fica salvo no histórico e sua sequência é atualizada automaticamente.</p></div>
+                </details>
+                <details class="faq-item fade-up delay-300">
+                    <summary>Posso usar o Atlas com meus amigos?</summary>
+                    <div class="faq-answer"><p>Sim. Crie ou participe de grupos, compartilhe recomendações e acompanhe o ranking da sua comunidade. A competição é leve, saudável e feita para motivar.</p></div>
+                </details>
+                <details class="faq-item fade-up delay-300">
+                    <summary>O aplicativo funciona offline?</summary>
+                    <div class="faq-answer"><p>Sim. Você pode registrar suas sessões mesmo sem internet. Quando a conexão voltar, o Atlas sincroniza seu histórico e atualiza seus desafios.</p></div>
+                </details>
+                <details class="faq-item fade-up delay-300">
+                    <summary>O Atlas é gratuito?</summary>
+                    <div class="faq-answer"><p>Você pode começar gratuitamente e acessar os recursos essenciais para criar o hábito. Alguns recursos avançados podem fazer parte de planos especiais no futuro.</p></div>
+                </details>
+                <details class="faq-item fade-up delay-300">
+                    <summary>Meus dados e meu progresso ficam protegidos?</summary>
+                    <div class="faq-answer"><p>Sim. Tratamos seus dados com responsabilidade e transparência. Você mantém o controle sobre suas informações e pode falar com o suporte sempre que precisar.</p></div>
+                </details>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .faq-section {
+        position: relative;
+        overflow: hidden;
+        border-top: 1px solid rgba(137, 169, 199, .1);
+        background: #070d13;
+        color: #f5f8fc;
+    }
+
+    .faq-section::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: min(980px, 85%);
+        height: 1px;
+        background: linear-gradient(90deg, transparent, rgba(28, 145, 246, .42), transparent);
+        transform: translateX(-50%);
+    }
+
+    .faq-container { width: min(1180px, calc(100% - 6rem)); margin: 0 auto; padding: 7.5rem 0 8rem; }
+    .faq-heading { max-width: 700px; margin: 0 auto 4rem; text-align: center; }
+    .faq-eyebrow { display: inline-flex; align-items: center; gap: .6rem; color: #5e9dd5; font-size: .72rem; font-weight: 700; letter-spacing: .18em; }
+    .faq-eyebrow i { width: 7px; height: 7px; border-radius: 50%; background: #168ff5; box-shadow: 0 0 12px rgba(22, 143, 245, .72); }
+    .faq-heading h2 { margin: 1rem 0 .9rem; color: #f7f9fc; font-size: clamp(2.5rem, 4.2vw, 4rem); line-height: 1.05; letter-spacing: -.06em; }
+    .faq-heading h2 span { color: #1694fa; }
+    .faq-heading > p { color: #9eb5cb; font-size: 1.05rem; line-height: 1.6; }
+
+    .faq-layout { display: grid; grid-template-columns: minmax(260px, .7fr) minmax(0, 1.35fr); gap: 5rem; align-items: start; }
+    .faq-aside { position: sticky; top: 2rem; padding: 1.7rem; border: 1px solid rgba(103, 152, 197, .2); border-radius: 20px; background: linear-gradient(145deg, rgba(18, 39, 58, .72), rgba(9, 17, 25, .75)); box-shadow: inset 0 1px rgba(255,255,255,.04), 0 20px 40px rgba(0,0,0,.12); }
+    .faq-aside-icon { display: grid; place-items: center; width: 54px; height: 54px; margin-bottom: 1.5rem; border: 1px solid rgba(22, 148, 250, .28); border-radius: 15px; color: #1598ff; background: rgba(10, 94, 163, .2); }
+    .faq-aside-icon svg { width: 31px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .faq-aside-kicker { color: #4e9cdb; font-size: .66rem; font-weight: 700; letter-spacing: .16em; }
+    .faq-aside h3 { margin: .75rem 0 .8rem; color: #f3f7fb; font-size: 1.45rem; line-height: 1.14; letter-spacing: -.045em; }
+    .faq-aside p { margin-bottom: 1.45rem; color: #91a8bd; font-size: .88rem; line-height: 1.55; }
+    .faq-contact { display: inline-flex; align-items: center; gap: .65rem; color: #65baff; font-size: .86rem; font-weight: 700; }
+    .faq-contact span { font-size: 1.1rem; transition: transform .2s ease; }
+    .faq-contact:hover span { transform: translateX(4px); }
+
+    .faq-list { display: flex; flex-direction: column; gap: .85rem; }
+    .faq-item { overflow: hidden; border: 1px solid rgba(112, 157, 194, .18); border-radius: 16px; background: linear-gradient(135deg, rgba(15, 29, 42, .7), rgba(8, 16, 24, .74)); box-shadow: inset 0 1px rgba(255,255,255,.025), 0 10px 24px rgba(0,0,0,.08); transition: border-color .25s ease, background .25s ease, transform .25s ease, box-shadow .25s ease; }
+    .faq-item:hover { border-color: rgba(48, 154, 243, .44); background: linear-gradient(135deg, rgba(17, 39, 58, .8), rgba(9, 19, 29, .8)); transform: translateY(-2px); box-shadow: inset 0 1px rgba(255,255,255,.035), 0 14px 28px rgba(0,0,0,.14); }
+    .faq-item[open] { border-color: rgba(28, 145, 240, .55); background: linear-gradient(135deg, rgba(15, 40, 61, .83), rgba(8, 18, 28, .83)); box-shadow: inset 0 1px rgba(111, 193, 255, .06), 0 16px 30px rgba(0,0,0,.15); }
+    .faq-item summary { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.25rem 1.35rem; cursor: pointer; list-style: none; color: #ecf2f8; font-size: 1.05rem; font-weight: 600; letter-spacing: -.025em; transition: color .2s ease, background .2s ease; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; display: grid; flex: 0 0 auto; place-items: center; width: 38px; height: 38px; border: 1px solid rgba(116, 163, 202, .42); border-radius: 50%; color: #b5d0e6; background: rgba(13, 30, 45, .8); box-shadow: inset 0 1px rgba(255,255,255,.06), 0 4px 12px rgba(0,0,0,.16); font-size: 1.55rem; font-weight: 300; line-height: 1; transition: color .25s ease, background .25s ease, border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+    .faq-item summary:hover { color: #65baff; }
+    .faq-item[open] summary { color: #64baff; }
+    .faq-item[open] summary { padding-bottom: 1rem; color: #72c2ff; }
+    .faq-item[open] summary::after { content: '−'; border-color: rgba(76, 181, 255, .9); color: #fff; background: linear-gradient(145deg, #1599ff, #0873c7); transform: rotate(180deg); box-shadow: 0 0 18px rgba(21, 153, 255, .3); }
+    .faq-answer { max-width: 700px; padding: 0 1.35rem 1.4rem; }
+    .faq-answer p { margin: 0; color: #91a8bd; font-size: .92rem; line-height: 1.7; }
+    .faq-item[open] .faq-answer { animation: faqAnswerIn .35s ease both; }
+
+    @keyframes faqAnswerIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 900px) {
+        .faq-container { width: min(680px, calc(100% - 3rem)); padding: 5.5rem 0 6rem; }
+        .faq-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+        .faq-aside { position: static; }
+        .faq-aside h3 { max-width: 420px; }
+    }
+
+    @media (max-width: 560px) {
+        .faq-container { width: calc(100% - 2rem); padding: 4.5rem 0 5rem; }
+        .faq-heading { margin-bottom: 2.75rem; }
+        .faq-heading h2 { font-size: 2.5rem; }
+        .faq-heading > p { font-size: .92rem; }
+        .faq-aside { padding: 1.35rem; }
+        .faq-item summary { padding: 1.1rem 1rem; font-size: .92rem; }
+        .faq-answer { padding-bottom: 1.25rem; }
+        .faq-answer p { font-size: .84rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .faq-item[open] .faq-answer { animation: none; }
+    }
+</style>

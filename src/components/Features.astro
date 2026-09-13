@@ -1,289 +1,172 @@
 ---
+import timerPhone from '../../imagens_mockup/2_Secao/tela-metronomo-leitura.png';
+import rankingPhone from '../../imagens_mockup/2_Secao/tela-ranking-semanal.png';
+import chatPhone from '../../imagens_mockup/2_Secao/tela-chat-literario.png';
 ---
 
-<section id="resources" class="features-showcase">
+<section id="resources" class="features-showcase fade-in" aria-labelledby="features-title">
     <div class="container">
-        <h2 class="section-title fade-up">Recursos literários completos</h2>
-        <p class="section-subtitle fade-up delay-100">
-            Check-in de leitura, ranking gamificado, chat comunitário, 
-            metas personalizadas e muito mais para leitores de todos os níveis.
-        </p>
-
-        <div class="phones-display">
-            <!-- Left Phone -->
-            <div class="phone-card tilt-left fade-in delay-100">
-                <div class="phone-inner">
-                    <div class="screen-header">⏱️ Metrônomo de Leitura</div>
-                    <div class="screen-body">
-                        <div class="timer-display">
-                            <span class="timer-value">25</span>
-                            <span class="timer-unit">min</span>
-                        </div>
-                        <div class="timer-controls">
-                            <span class="ctrl">−</span>
-                            <span class="ctrl play">▶</span>
-                            <span class="ctrl">+</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Center Phone -->
-            <div class="phone-card center-phone fade-in delay-300">
-                <div class="phone-inner">
-                    <div class="screen-header">📊 Ranking Semanal</div>
-                    <div class="screen-body">
-                        <div class="ranking-tabs">
-                            <span>Favoritos</span>
-                            <span class="active">Todos</span>
-                            <span>Amigos</span>
-                        </div>
-                        <div class="ranking-item"><span>🥇 Mariana</span> <span>12h</span></div>
-                        <div class="ranking-item"><span>🥈 Lucas</span> <span>10h</span></div>
-                        <div class="ranking-item"><span>🥉 Sofia</span> <span>8h</span></div>
-                        <div class="ranking-item you"><span>4️⃣ Você</span> <span>6h</span></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Phone -->
-            <div class="phone-card tilt-right fade-in delay-500">
-                <div class="phone-inner">
-                    <div class="screen-header">💬 Chat Literário</div>
-                    <div class="screen-body chat-body">
-                        <div class="msg received">Terminei "O Hobbit"! 🎉</div>
-                        <div class="msg sent">Incrível! Recomendo Silmarillion</div>
-                        <div class="msg received">Já está na minha lista! 📚</div>
-                    </div>
-                </div>
-            </div>
+        <div class="features-heading">
+            <span class="features-eyebrow">FUNCIONALIDADES</span>
+            <h2 id="features-title" class="section-title">Recursos literários <span>completos</span></h2>
+            <p class="section-subtitle">
+                Tudo o que você precisa para criar o hábito da leitura, evoluir no seu ritmo<br class="desktop-only" />
+                e fazer parte de uma comunidade que compartilha as mesmas paixões.
+            </p>
         </div>
+
+        <div class="phones-scene" aria-label="Telas do aplicativo Atlas">
+            <figure class="feature-phone feature-phone--timer">
+                <img src={timerPhone.src} alt="Tela de metrônomo de leitura do Atlas" />
+            </figure>
+            <figure class="feature-phone feature-phone--ranking">
+                <img src={rankingPhone.src} alt="Tela de ranking semanal do Atlas" />
+            </figure>
+            <figure class="feature-phone feature-phone--chat">
+                <img src={chatPhone.src} alt="Tela de chat literário do Atlas" />
+            </figure>
+        </div>
+
+        <div class="feature-highlights" aria-label="Recursos principais">
+            <article class="feature-highlight">
+                <span class="highlight-icon highlight-icon--blue" aria-hidden="true">
+                    <svg viewBox="0 0 32 32"><path d="M5 7.5c4.3-.9 7.7-.1 11 2.1 3.3-2.2 6.7-3 11-2.1v17c-4.3-.9-7.7-.1-11 2.1-3.3-2.2-6.7-3-11-2.1v-17Z" /><path d="M16 10v16" /></svg>
+                </span>
+                <span><strong>Check-in de Leitura</strong><small>Registre seu tempo<br />de forma rápida e intuitiva.</small></span>
+            </article>
+            <article class="feature-highlight">
+                <span class="highlight-icon highlight-icon--green" aria-hidden="true">
+                    <svg viewBox="0 0 32 32"><path d="M10 5h12v7c0 4.1-2.7 7-6 7s-6-2.9-6-7V5Z" /><path d="M10 8H5v3c0 3.3 1.9 5.1 5.4 5.2M22 8h5v3c0 3.3-1.9 5.1-5.4 5.2M16 19v5M11 27h10" /></svg>
+                </span>
+                <span><strong>Ranking Gamificado</strong><small>Compita com amigos<br />e desbloqueie conquistas.</small></span>
+            </article>
+            <article class="feature-highlight">
+                <span class="highlight-icon highlight-icon--purple" aria-hidden="true">
+                    <svg viewBox="0 0 32 32"><path d="M6 7.5h20v13H14l-6 5v-5H6v-13Z" /></svg>
+                </span>
+                <span><strong>Chat Literário</strong><small>Converse e compartilhe<br />recomendações.</small></span>
+            </article>
+            <article class="feature-highlight">
+                <span class="highlight-icon highlight-icon--yellow" aria-hidden="true">
+                    <svg viewBox="0 0 32 32"><path d="M5 25V16h5v9H5Zm8 0V7h5v18h-5Zm8 0V12h5v13h-5Z" /></svg>
+                </span>
+                <span><strong>Metas Personalizadas</strong><small>Defina seus objetivos<br />e acompanhe seu progresso.</small></span>
+            </article>
+        </div>
+
+        <div class="features-signature" aria-hidden="true"><i></i><span>MAIS QUE LEITURA, UMA COMUNIDADE</span><i></i></div>
     </div>
 </section>
 
 <style>
-    .features-showcase {
-        padding: 8rem 0;
-        background: var(--bg-primary);
-        text-align: center;
-        overflow: hidden; /* Prevent horizontal scroll during anim */
+    .features-showcase { position: relative; isolation: isolate; overflow: hidden; padding: 5.5rem 0 3.25rem; background: #050b10; box-shadow: inset 0 7rem 8rem rgba(0, 0, 0, .28), inset 0 -9rem 10rem rgba(0, 0, 0, .58); text-align: center; }
+    .features-showcase::before { content: ''; position: absolute; z-index: 0; inset: 0; pointer-events: none; background: radial-gradient(ellipse 58% 47% at 50% 49%, rgba(17, 105, 190, .24), rgba(7, 48, 88, .14) 42%, transparent 76%), radial-gradient(ellipse 30% 32% at 4% 80%, rgba(18, 61, 96, .16), transparent 72%), radial-gradient(ellipse 95% 82% at 50% 44%, transparent 37%, rgba(0, 3, 6, .5) 100%), linear-gradient(115deg, rgba(0,0,0,.24), transparent 52%, rgba(0,0,0,.2)); }
+    .features-showcase::after { content: ''; position: absolute; z-index: 0; bottom: -20rem; left: -18rem; width: 48rem; height: 34rem; border-radius: 50%; background: radial-gradient(ellipse, rgba(18, 63, 98, .28), transparent 68%); pointer-events: none; }
+    .features-showcase .container { position: relative; z-index: 1; max-width: 1380px; }
+    .features-heading { position: relative; z-index: 2; }
+    .features-eyebrow { display: inline-flex; margin-bottom: 1.05rem; padding: .5rem 1rem; border: 1px solid rgba(157, 190, 220, .17); border-radius: 99px; color: #a9bed3; background: rgba(18, 28, 38, .56); box-shadow: inset 0 1px rgba(255,255,255,.04); font-size: .72rem; font-weight: 600; letter-spacing: .32em; animation: features-fade-up .7s cubic-bezier(.22, 1, .36, 1) .06s both; }
+    .section-title { margin: 0; color: #f6f8fc; font-size: clamp(2.5rem, 4vw, 4rem); font-weight: 700; letter-spacing: -.055em; line-height: 1.05; animation: features-title-in .85s cubic-bezier(.22, 1, .36, 1) .14s both; }
+    .section-title span { color: #198dff; }
+    .section-subtitle { max-width: 760px; margin: 1rem auto 0; color: #9db5ce; font-size: clamp(1rem, 1.25vw, 1.2rem); line-height: 1.55; letter-spacing: -.02em; animation: features-fade-up .75s cubic-bezier(.22, 1, .36, 1) .28s both; }
+
+    .phones-scene { position: relative; display: flex; align-items: end; justify-content: center; width: min(1100px, 100%); height: 590px; margin: 1.4rem auto .6rem; isolation: isolate; }
+    .phones-scene::before { content: ''; position: absolute; z-index: -1; top: 10%; left: 50%; width: 1060px; height: 500px; border-radius: 50%; background: radial-gradient(ellipse, rgba(16, 106, 196, .2) 0%, rgba(9, 67, 126, .1) 42%, transparent 72%); filter: blur(24px); transform: translateX(-50%); }
+    .feature-phone { position: relative; z-index: 1; margin: 0; transform-origin: center bottom; filter: drop-shadow(0 24px 23px rgba(0, 0, 0, .6)); animation: phone-arrival .85s cubic-bezier(.22, 1, .36, 1) both; }
+    .feature-phone img { display: block; width: 100%; height: auto; animation: phone-image-in .95s cubic-bezier(.22, 1, .36, 1) both; transform-origin: center bottom; }
+    .feature-phone--timer { width: 280px; margin-right: -72px; animation-delay: .12s; transform: rotate(-8deg) translateY(-4px); }
+    .feature-phone--ranking { z-index: 2; width: 310px; animation-delay: .26s; }
+    .feature-phone--chat { width: 280px; margin-left: -72px; animation-delay: .4s; transform: rotate(8deg) translateY(-4px); }
+    .feature-phone--timer img { animation-delay: .16s; }
+    .feature-phone--ranking img { animation-delay: .3s; }
+    .feature-phone--chat img { animation-delay: .44s; }
+
+    .feature-highlights { display: grid; grid-template-columns: repeat(4, 1fr); width: min(1260px, 100%); margin: 0 auto; text-align: left; animation: features-fade-up .8s cubic-bezier(.22, 1, .36, 1) .52s both; }
+    .feature-highlight { display: flex; min-width: 0; gap: 1rem; padding: .7rem 2rem; border-right: 1px solid rgba(139, 169, 198, .2); animation: feature-highlight-in .7s cubic-bezier(.22, 1, .36, 1) .7s both; }
+    .feature-highlight:nth-child(2) { animation-delay: .8s; }
+    .feature-highlight:nth-child(3) { animation-delay: .9s; }
+    .feature-highlight:nth-child(4) { animation-delay: 1s; }
+    .feature-highlight:first-child { padding-left: 0; }
+    .feature-highlight:last-child { padding-right: 0; border-right: 0; }
+    .feature-highlight strong, .feature-highlight small { display: block; }
+    .feature-highlight strong { margin: .18rem 0 .38rem; color: #eff5fb; font-size: .92rem; font-weight: 600; white-space: nowrap; }
+    .feature-highlight small { color: #94abc3; font-size: .83rem; line-height: 1.43; }
+    .highlight-icon { display: grid; flex: 0 0 auto; place-items: center; width: 48px; height: 48px; border-radius: 14px; animation: highlight-icon-in .7s cubic-bezier(.22, 1, .36, 1) .82s both; }
+    .feature-highlight:nth-child(2) .highlight-icon { animation-delay: .92s; }
+    .feature-highlight:nth-child(3) .highlight-icon { animation-delay: 1.02s; }
+    .feature-highlight:nth-child(4) .highlight-icon { animation-delay: 1.12s; }
+    .highlight-icon svg { width: 25px; height: 25px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.2; }
+    .highlight-icon--blue { color: #38a2ff; background: rgba(11, 81, 145, .28); }
+    .highlight-icon--green { color: #5cdd66; background: rgba(20, 105, 41, .25); }
+    .highlight-icon--purple { color: #ca84ff; background: rgba(84, 30, 127, .27); }
+    .highlight-icon--purple svg, .highlight-icon--yellow svg { fill: currentColor; stroke: none; }
+    .highlight-icon--yellow { color: #ffd23b; background: rgba(109, 84, 5, .25); }
+    .features-signature { display: flex; align-items: center; justify-content: center; gap: 2rem; margin-top: 3.5rem; color: #7f9bb7; font-size: .68rem; font-weight: 600; letter-spacing: .27em; animation: features-fade-up .75s cubic-bezier(.22, 1, .36, 1) 1.05s both; }
+    .features-signature i { width: 86px; height: 1px; background: rgba(133, 167, 198, .23); }
+
+    .features-showcase .features-eyebrow,
+    .features-showcase .section-title,
+    .features-showcase .section-subtitle,
+    .features-showcase .feature-phone,
+    .features-showcase .feature-phone img,
+    .features-showcase .feature-highlights,
+    .features-showcase .feature-highlight,
+    .features-showcase .highlight-icon,
+    .features-showcase .features-signature { animation-play-state: paused; }
+    .features-showcase.visible .features-eyebrow,
+    .features-showcase.visible .section-title,
+    .features-showcase.visible .section-subtitle,
+    .features-showcase.visible .feature-phone,
+    .features-showcase.visible .feature-phone img,
+    .features-showcase.visible .feature-highlights,
+    .features-showcase.visible .feature-highlight,
+    .features-showcase.visible .highlight-icon,
+    .features-showcase.visible .features-signature { animation-play-state: running; }
+
+    @keyframes phone-arrival { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes phone-image-in { from { opacity: 0; transform: translateY(42px) scale(.94); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    @keyframes features-fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes features-title-in { from { opacity: 0; transform: translateY(24px) scale(.98); filter: blur(4px); } to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); } }
+    @keyframes feature-highlight-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes highlight-icon-in { from { opacity: 0; transform: scale(.72) rotate(-7deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+
+    @media (max-width: 1050px) {
+        .features-showcase .container { width: min(940px, calc(100% - 3rem)); }
+        .phones-scene { height: 510px; }
+        .feature-phone--timer, .feature-phone--chat { width: 240px; }
+        .feature-phone--ranking { width: 270px; }
+        .feature-highlight { padding-inline: 1.25rem; }
+        .feature-highlight strong { font-size: .8rem; white-space: normal; }
+        .feature-highlight small { font-size: .74rem; }
     }
 
-    .section-title {
-        font-size: 3rem;
-        font-weight: 800;
-        margin-bottom: 1.5rem;
-        letter-spacing: -0.02em;
+    @media (max-width: 720px) {
+        .features-showcase { padding-top: 4.5rem; }
+        .features-showcase .container { width: min(460px, calc(100% - 2rem)); }
+        .section-subtitle br { display: none; }
+        .phones-scene { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: end; height: auto; margin-top: 2.4rem; gap: .2rem; }
+        .feature-phone { width: 100%; margin: 0; }
+        .feature-phone--timer { grid-column: 1; grid-row: 2; transform: rotate(-5deg) translateX(5%); }
+        .feature-phone--ranking { grid-column: 1 / -1; grid-row: 1; width: 62%; justify-self: center; }
+        .feature-phone--chat { grid-column: 2; grid-row: 2; transform: rotate(5deg) translateX(-5%); }
+        .feature-highlights { grid-template-columns: repeat(2, 1fr); gap: 1.25rem 0; margin-top: 2.5rem; }
+        .feature-highlight { padding: .25rem 1rem; border-right: 0; }
+        .feature-highlight:nth-child(odd) { padding-left: 0; }
+        .feature-highlight:nth-child(even) { padding-right: 0; }
+        .highlight-icon { width: 42px; height: 42px; }
+        .feature-highlight small { font-size: .7rem; }
+        .features-signature { gap: 1rem; margin-top: 2.5rem; font-size: .55rem; letter-spacing: .17em; }
+        .features-signature i { width: 30px; }
     }
 
-    .section-subtitle {
-        color: var(--text-secondary);
-        font-size: 1.15rem;
-        line-height: 1.7;
-        max-width: 600px;
-        margin: 0 auto 4rem;
-    }
-
-    .phones-display {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-        perspective: 1000px;
-        padding: 2rem 0; /* Space for shadows/tilts */
-    }
-
-    .phone-card {
-        width: 240px;
-        background: #1a1a1a;
-        border-radius: 32px;
-        border: 2px solid rgba(255, 255, 255, 0.08);
-        padding: 10px;
-        
-        /* Animation Base Props */
-        opacity: 0;
-        transition: opacity 1s ease-out, transform 1s cubic-bezier(0.22, 1, 0.36, 1);
-    }
-
-    /* Initial States (Hidden) */
-    .tilt-left {
-        transform: translateX(-100px) rotate(-8deg) translateY(20px);
-    }
-
-    .center-phone {
-        z-index: 2;
-        border-color: rgba(77, 159, 255, 0.3);
-        box-shadow: 0 0 40px rgba(77, 159, 255, 0.1);
-        transform: translateY(100px) scale(1.1);
-    }
-
-    .tilt-right {
-        transform: translateX(100px) rotate(8deg) translateY(20px);
-    }
-
-    /* Final States (Visible) - Triggered by JS adding .visible */
-    /* Specific selectors to win over global .visible rules */
-    .phone-card.visible {
-        opacity: 1;
-    }
-
-    .phone-card.visible.tilt-left {
-        transform: rotate(-8deg) translateY(20px);
-    }
-
-    .phone-card.visible.tilt-right {
-        transform: rotate(8deg) translateY(20px);
-    }
-
-    .phone-card.visible.center-phone {
-        transform: scale(1.1);
-    }
-
-    /* Hover effects (only when visible) */
-    .phone-card.visible:hover {
-        transform: scale(1.05) rotate(0deg) translateY(0);
-        z-index: 10;
-    }
-
-    .phone-inner {
-        background: #0d0d0d;
-        border-radius: 22px;
-        overflow: hidden;
-        min-height: 400px;
-    }
-
-    .screen-header {
-        padding: 1.5rem 1rem 0.75rem;
-        font-size: 0.85rem;
-        font-weight: 700;
-        border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .screen-body {
-        padding: 1.5rem 1rem;
-    }
-
-    /* Timer Screen */
-    .timer-display {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 2rem 0;
-    }
-
-    .timer-value {
-        font-size: 4rem;
-        font-weight: 800;
-        color: var(--accent-primary);
-    }
-
-    .timer-unit {
-        color: var(--text-muted);
-        font-size: 0.9rem;
-    }
-
-    .timer-controls {
-        display: flex;
-        gap: 1.5rem;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .ctrl {
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255,255,255,0.05);
-        color: var(--accent-primary);
-        font-size: 1.2rem;
-    }
-
-    .ctrl.play {
-        width: 48px;
-        height: 48px;
-        background: var(--accent-primary);
-        color: #000;
-    }
-
-    /* Ranking Screen */
-    .ranking-tabs {
-        display: flex;
-        gap: 0.5rem;
-        margin-bottom: 1rem;
-        font-size: 0.75rem;
-    }
-
-    .ranking-tabs span {
-        padding: 0.3rem 0.75rem;
-        border-radius: var(--radius-full);
-        color: var(--text-muted);
-        border: 1px solid transparent;
-    }
-
-    .ranking-tabs span.active {
-        background: var(--accent-primary);
-        color: #000;
-        font-weight: 600;
-    }
-
-    .ranking-item {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.6rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.04);
-        font-size: 0.8rem;
-        color: var(--text-secondary);
-    }
-
-    .ranking-item.you {
-        color: var(--accent-primary);
-        font-weight: 600;
-    }
-
-    /* Chat Screen */
-    .chat-body {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .msg {
-        padding: 0.5rem 0.75rem;
-        border-radius: 12px;
-        font-size: 0.75rem;
-        max-width: 80%;
-    }
-
-    .msg.received {
-        background: rgba(255,255,255,0.06);
-        color: var(--text-secondary);
-        align-self: flex-start;
-    }
-
-    .msg.sent {
-        background: var(--accent-primary);
-        color: #000;
-        align-self: flex-end;
-    }
-
-    @media (max-width: 768px) {
-        .section-title {
-            font-size: 2rem;
-        }
-
-        .phones-display {
-            flex-direction: column;
-        }
-
-        .tilt-left, .tilt-right, .center-phone {
-            transform: none;
-        }
-
-        .phone-card {
-            width: 260px;
-        }
+    @media (prefers-reduced-motion: reduce) {
+        .features-eyebrow,
+        .section-title,
+        .section-subtitle,
+        .feature-phone,
+        .feature-phone img,
+        .feature-highlights,
+        .feature-highlight,
+        .highlight-icon,
+        .features-signature { animation: none; }
     }
 </style>
