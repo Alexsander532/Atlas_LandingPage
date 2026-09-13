@@ -1,3 +1,7 @@
+---
+import atlasLogo from '../../imagens_mockup/atlasLogoPrincipal.png';
+---
+
 <footer class="site-footer">
     <div class="footer-glow" aria-hidden="true"></div>
 
@@ -5,15 +9,9 @@
         <div class="footer-main">
             <div class="footer-brand">
                 <a class="footer-logo" href="/#home" aria-label="Atlas, início">
-                    <span class="footer-logo-mark" aria-hidden="true">
-                        <i class="footer-book footer-book--green"></i>
-                        <i class="footer-book footer-book--orange"></i>
-                        <i class="footer-book footer-book--blue"></i>
-                    </span>
-                    <span>Atlas</span>
+                    <img class="footer-logo-image" src={atlasLogo.src} alt="Atlas" />
                 </a>
                 <p>Leia mais. Viva melhor.</p>
-                <span class="footer-status"><i aria-hidden="true"></i> Feito para quem ama ler</span>
             </div>
 
             <div class="footer-column">
@@ -21,7 +19,7 @@
                 <a href="/#home">Início</a>
                 <a href="/#resources">Recursos</a>
                 <a href="/#check-in">Como funciona</a>
-                <a href="/#testimonials">Depoimentos</a>
+                    <a href="/#waitlist">Lista de espera</a>
             </div>
 
             <div class="footer-column">
@@ -35,7 +33,7 @@
             <div class="footer-cta">
                 <span class="footer-cta-label">SUA PRÓXIMA PÁGINA COMEÇA AQUI</span>
                 <h2>Pronto para criar um novo hábito?</h2>
-                <a class="footer-cta-button" href="/#home">Conheça o Atlas <span aria-hidden="true">→</span></a>
+                <a class="footer-cta-button" href="/#waitlist">Avise-me no lançamento <span aria-hidden="true">→</span></a>
             </div>
         </div>
 
@@ -89,58 +87,14 @@
 
     .footer-brand { align-self: start; }
 
-    .footer-logo {
-        display: inline-flex;
-        align-items: center;
-        gap: .8rem;
-        color: #f8fafc;
-        font-size: 2.1rem;
-        font-weight: 800;
-        letter-spacing: -.06em;
-    }
-
-    .footer-logo-mark {
-        position: relative;
-        display: block;
-        width: 40px;
-        height: 39px;
-    }
-
-    .footer-book {
-        position: absolute;
-        display: block;
-        width: 19px;
-        height: 28px;
-        border: 2px solid rgba(4, 22, 30, .45);
-        border-radius: 2px 3px 3px 2px;
-        box-shadow: inset -3px 0 rgba(255,255,255,.22);
-        transform: skewY(-3deg);
-    }
-
-    .footer-book--green { left: 0; top: 3px; background: #42c36a; }
-    .footer-book--orange { left: 10px; top: 7px; background: #f38437; }
-    .footer-book--blue { left: 18px; top: 11px; background: #3b9df2; }
+    .footer-logo { display: inline-flex; align-items: center; width: 210px; transition: transform .2s ease; }
+    .footer-logo:hover { transform: translateY(-2px); }
+    .footer-logo-image { display: block; width: 100%; height: auto; object-fit: contain; }
 
     .footer-brand > p {
         margin: 1.25rem 0 1.3rem;
         color: #a9bdd0;
         font-size: 1rem;
-    }
-
-    .footer-status {
-        display: inline-flex;
-        align-items: center;
-        gap: .55rem;
-        color: #70889f;
-        font-size: .78rem;
-    }
-
-    .footer-status i {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: #37cf6a;
-        box-shadow: 0 0 10px rgba(55, 207, 106, .65);
     }
 
     .footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: .85rem; }
